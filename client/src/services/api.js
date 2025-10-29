@@ -39,7 +39,7 @@ api.interceptors.response.use(
 );
 
 // Post API services
-export const postService = {
+export const postService = { 
   // Get all posts with optional pagination and filters
   getAllPosts: async (page = 1, limit = 10, category = null) => {
     let url = `/posts?page=${page}&limit=${limit}`;
@@ -59,6 +59,7 @@ export const postService = {
   // Create a new post
   createPost: async (postData) => {
     const response = await api.post('/posts', postData);
+    console.log("Sending to backend:", postData);
     return response.data;
   },
 
@@ -134,3 +135,4 @@ export const authService = {
 };
 
 export default api; 
+
