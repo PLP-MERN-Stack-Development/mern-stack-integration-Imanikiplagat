@@ -17,12 +17,12 @@
 ## Screenshots
 ## 🏠 Homepage Preview
 
-![Homepage Screenshot](Screenshots/homepage.png)
+![Homepage Screenshot](Screenshots/home.png)
 
 ## ✍️ Post Creation Form
 
-![Post Form Screenshot](screenshots/post-form.png)
-![Post Form Screenshot](screenshots/post-form.png)
+![Post Form Screenshot](Screenshots/post.png)
+![Post Form Screenshot](Screenshots/newpost.png)
 
 ## 🧰 Tech Stack
 
