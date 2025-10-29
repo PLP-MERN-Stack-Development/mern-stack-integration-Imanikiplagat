@@ -1,78 +1,81 @@
-# MERN Stack Integration Assignment
+# 📝 Imani.s Blog Platform
 
-This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
+**Imani.s** is a full-stack blog application built with the MERN stack (MongoDB, Express, React, Node.js). It’s designed to be a welcoming, community-driven space where users can share posts, explore categories, and engage with meaningful content. The name "Imani" means **faith** — a reflection of the platform’s purpose, resilience, and beauty.
 
-## Assignment Overview
+---
 
-You will build a blog application with the following features:
-1. RESTful API with Express.js and MongoDB
-2. React front-end with component architecture
-3. Full CRUD functionality for blog posts
-4. User authentication and authorization
-5. Advanced features like image uploads and comments
+## 🚀 Features
 
-## Project Structure
+- **Create & Read Posts**: Users can write blog posts with rich content and images.
+- **Flexible Image Handling**: Supports both direct file uploads and external image URLs.
+- **Category Filtering**: Posts are organized by categories like Technology, Education, Lifestyle, Business & Entrepreneurship, and Travel & Culture.
+- **Default Author Assignment**: All posts are automatically attributed to the creator (Faith) for now.
+- **Responsive UI**: Built with Tailwind CSS for a clean, mobile-friendly experience.
+- **Error Handling & Feedback**: Clear alerts and fallback UI for smooth user interaction.
 
-```
-mern-blog/
-├── client/                 # React front-end
-│   ├── public/             # Static files
-│   ├── src/                # React source code
-│   │   ├── components/     # Reusable components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── services/       # API services
-│   │   ├── context/        # React context providers
-│   │   └── App.jsx         # Main application component
-│   └── package.json        # Client dependencies
-├── server/                 # Express.js back-end
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Route controllers
-│   ├── models/             # Mongoose models
-│   ├── routes/             # API routes
-│   ├── middleware/         # Custom middleware
-│   ├── utils/              # Utility functions
-│   ├── server.js           # Main server file
-│   └── package.json        # Server dependencies
-└── README.md               # Project documentation
-```
+---
+## Screenshots
+## 🏠 Homepage Preview
 
-## Getting Started
+![Homepage Screenshot](Screenshots/homepage.png)
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week4-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+## ✍️ Post Creation Form
 
-## Files Included
+![Post Form Screenshot](screenshots/post-form.png)
+![Post Form Screenshot](screenshots/post-form.png)
 
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
+## 🧰 Tech Stack
 
-## Requirements
+| Layer        | Tools Used                          |
+|--------------|-------------------------------------|
+| Frontend     | React, Vite, Tailwind CSS           |
+| Backend      | Node.js, Express                    |
+| Database     | MongoDB (Mongoose ODM)              |
+| Image Upload | Multer, FormData, Cloudinary-ready  |
+| Auth (WIP)   | JWT-based authentication (planned)  |
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
+---
 
-## Submission
+## 📁 Folder Structure
+client/  src # React frontend
+          └──          
+             └── components/ # Reusable UI components 
+             └── pages/      # Page views (Home, PostForm, etc.) 
+             └── services/   # Axios API calls
+             └──hooks/
+             └──context/
+           App.jsx  
+server/      # Express backend 
+                └── models/     # Mongoose schemas (Post, Category, User) 
+                └── routes/     # API endpoints 
+                └── middleware/ # Error handling, auth (future)
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+## 🛠 Setup Instructions
 
-## Resources
+1. **Clone the repo**  
+   `git clone https://github.com/Imanikiplagat.git`
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+2. **Install dependencies**  
+   ```bash
+   cd client && npm install
+   cd ../server && npm install
+3  **Configure environment variables**
+Create .env files in both client and server folders for API URLs, MongoDB URI, etc.
+
+4. **Run the app**
+cd server && npm run dev
+cd ../client && npm run dev
+
+✨ Future Enhancements- 🔐 User authentication and role-based access
+- 💬 Comment system with moderation
+- 📊 Post analytics and engagement tracking
+- 🌍 Multi-language support
+- 🧑‍🤝‍🧑 Community profiles and post likes
+- 
+🙋‍♀️ About the CreatorBuilt by Faith, a caregiver turned full-stack developer. Imani.s is a reflection of her journey — combining empathy, design, and technical growth to create a space that feels purposeful and inclusive.📄 LicenseThis project is open-source under the MIT License.
+---
+
+
+   
