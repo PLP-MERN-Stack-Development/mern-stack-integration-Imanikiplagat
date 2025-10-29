@@ -17,12 +17,12 @@
 ## Screenshots
 ## 🏠 Homepage Preview
 
-![Homepage Screenshot](Screenshots/homepage.png)
+![Homepage Screenshot](Screenshots/home.png)
 
 ## ✍️ Post Creation Form
 
-![Post Form Screenshot](screenshots/post-form.png)
-![Post Form Screenshot](screenshots/post-form.png)
+![Post Form Screenshot](Screenshots/post.png)
+![Post Form Screenshot](Screenshots/newpost.png)
 
 ## 🧰 Tech Stack
 
@@ -39,15 +39,23 @@
 ## 📁 Folder Structure
 client/  src # React frontend
           └──          
+            
              └── components/ # Reusable UI components 
+            
              └── pages/      # Page views (Home, PostForm, etc.) 
+            
              └── services/   # Axios API calls
+            
              └──hooks/
+            
              └──context/
            App.jsx  
 server/      # Express backend 
+                
                 └── models/     # Mongoose schemas (Post, Category, User) 
+                
                 └── routes/     # API endpoints 
+               
                 └── middleware/ # Error handling, auth (future)
 
 ---
@@ -74,7 +82,7 @@ cd ../client && npm run dev
 - 🌍 Multi-language support
 - 🧑‍🤝‍🧑 Community profiles and post likes
 - 
-🙋‍♀️ About the CreatorBuilt by Faith, a caregiver turned full-stack developer. Imani.s is a reflection of her journey — combining empathy, design, and technical growth to create a space that feels purposeful and inclusive.📄 LicenseThis project is open-source under the MIT License.
+ About the CreatorBuilt by Faith, a caregiver turned full-stack developer. Imani.s is a reflection of her journey — combining empathy, design, and technical growth to create a space that feels purposeful and inclusive.📄 LicenseThis project is open-source under the MIT License.
 ---
 
 
