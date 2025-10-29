@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import PostDetail from "./Pages/PostDetail";
 import PostForm from "./Pages/PostForm";
-import EditPost from "./Pages/EditPost";
+import EditPost from "./Pages/EditPost"; // Pages changes
 
 function App() {
   return (
