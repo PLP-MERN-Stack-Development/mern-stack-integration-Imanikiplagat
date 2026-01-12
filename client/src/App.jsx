@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import PostDetail from "./Pages/PostDetail";
 import PostForm from "./Pages/PostForm";
 import EditPost from "./Pages/EditPost"; // Pages changes
+import "./index.css"; 
 
 function App() {
   return (
