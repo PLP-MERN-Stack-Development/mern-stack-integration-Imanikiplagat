@@ -10,7 +10,8 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(null);  
     const filteredPosts = selectedCategory
-    ? posts.filter((post) => post.category._id === selectedCategory)
+    ? posts.filter(
+      (post) => post.category && post.category._id === selectedCategory)
     : posts;
   
   // Fetch all posts on initial load
@@ -19,6 +20,9 @@ export default function Home() {
       try {
         const data = await postService.getAllPosts();
         setPosts(data);
+
+        console.log("POSTS FROM API:", data);
+        
         setLoading(false);
       } catch (err) {
         console.error("Error fetching posts:", err);
@@ -113,7 +117,7 @@ export default function Home() {
       )}
       {!loading && !error && posts.length > 0 && (
         <div className="grid md:grid-cols-3 gap-6">
-          {posts.map((post) => (
+          {filteredPosts.map((post) => (
             <PostCard key={post._id} post={post} />
           ))}
         </div>
