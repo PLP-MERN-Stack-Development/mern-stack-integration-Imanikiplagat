@@ -8,7 +8,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 
 // Import routes
-const postRoutes = require('./Routes/Posts');
+const postRoutes = require('./Routes/posts');
 const categoryRoutes = require('./Routes/categories');
 const authRoutes = require('./Routes/auth');
 
@@ -41,7 +41,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // API routes
-app.use('/api/Posts', postRoutes);
+app.use('/api/mineis', postRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/auth', authRoutes);
 
