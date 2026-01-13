@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({ 
-  origin: [ "http://localhost:5173", "https://imani-blog-api.onrender.com "],
+  origin: [ "http://localhost:5173"],
 
   credentials: true,
 }));
